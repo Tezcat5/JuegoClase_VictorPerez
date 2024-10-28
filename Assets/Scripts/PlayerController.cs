@@ -180,7 +180,7 @@ public class PlayerController : MonoBehaviour
         isAttacking = false;
     }
 
-    void TakeDamage()
+    public void TakeDamage()
     {
         _currentHealth--;
 
