@@ -156,6 +156,7 @@ public class PlayerController : MonoBehaviour
     {
         isAttacking = true;
         characterAnimator.SetTrigger("Attack");
+        SoundManager.instance.PlaySFX(_audioSource, SoundManager.instance._attackAudio);
     }
 
     void Attack()
@@ -170,7 +171,6 @@ public class PlayerController : MonoBehaviour
                 enemyRigidBody.AddForce(transform.right + transform.up * 2, ForceMode2D.Impulse);
                 Enemy script = enemy.GetComponent<Enemy>();
                 script.TakeDamage();
-                SoundManager.instance.PlaySFX(_audioSource, SoundManager.instance._attackAudio);
             }
         }
     }

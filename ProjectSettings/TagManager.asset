@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Mimico
+  - Star
   layers:
   - Default
   - TransparentFX
